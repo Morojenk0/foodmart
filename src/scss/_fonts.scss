@@ -1,0 +1,40 @@
+// ! OpenSans
+
+@font-face {
+	font-family: "openSans-regular";
+	font-display: swap;
+	src: url("../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf")
+		format("opentype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "openSans-semi-bold";
+	font-display: swap;
+	src: url("../fonts/Open_Sans/static/OpenSans/OpenSans-SemiBold.ttf")
+		format("opentype");
+	font-weight: 600;
+	font-style: normal;
+}
+
+// ! Nunito
+
+@font-face {
+	font-family: "nunito-bold";
+	font-display: swap;
+	src: url("../fonts/Nunito/static/Nunito-Bold.ttf");
+	font-weight: 700;
+	font-style: normal;
+}
+
+// ! CormodantGaramond
+
+@font-face {
+	font-family: "cormodantGaramond-regular";
+	font-display: swap;
+	src: url("../fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf")
+		format("opentype");
+	font-weight: 400;
+	font-style: normal;
+}

@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>title</title>
+	</head>
+	<body class="body">
+		<header class="header">
+			<div class="header-info">
+				<a class="header-info__link" href="#"
+					><img class="header-info__img" src="./images/svg/logo.svg" alt="logo"
+				/></a>
+				<section class="search">
+					<select class="search__choice" name="search">
+						<option class="search__item" value="#">All Categories</option>
+						<option class="search__item" value="#">fruits &amp; veges</option>
+						<option class="search__item" value="#">breads &amp; sweets</option>
+						<option class="search__item" value="#">wine drinks</option>
+						<option class="search__item" value="#">oil &amp; ghee</option>
+						<option class="search__item" value="#">raw meat</option>
+						<optio n class="search__item" value="#">natural herbs</optio>
+					</select>
+					<input
+						class="search__input"
+						placeholder="Search for more than 20,000 products"
+					/>
+					<img class="search__img" src="./images/svg/search.svg" alt="search" />
+				</section>
+				<section class="support">
+					<address class="support__adress">
+						<p class="support__text">for support ?</p>
+						<a class="support__link" target="_self" href="tel:+980-34984089"
+							>+980-34984089</a
+						>
+					</address>
+				</section>
+				<section class="account">
+					<article class="account__item">
+						<img
+							class="account__item-img"
+							src="./images/svg/profile.svg"
+							alt="profile"
+							style="width: 0.625rem; height: 0.75rem"
+						/>
+					</article>
+					<article class="account__item">
+						<img
+							class="account__item-img"
+							src="./images/svg/follow.svg"
+							alt="follow"
+							style="width: 0.75rem; height: 0.625rem"
+						/>
+						<output class="account__item-counter">12</output>
+					</article>
+					<article class="account__item">
+						<img
+							class="account__item-img"
+							src="./images/svg/cart-1.svg"
+							alt="cart"
+							style="width: 0.875rem; height: 0.75rem"
+						/>
+						<output class="account__item-counter">22</output>
+					</article>
+					<dl class="cart-value">
+						<dt class="cart-value__text">your cart</dt>
+						<dd class="cart-value__number">
+							$<output class="cart-value__output">1290.00</output>
+						</dd>
+					</dl>
+				</section>
+			</div>
+			<hr class="line header__line" />
+			<div class="header-navigation">
+				<select class="filter" name="">
+					<option class="filter__item" value="">shop by departments</option>
+					<option class="filter__item" value="">shop by departments</option>
+					<option class="filter__item" value="">shop by departments</option>
+					<option class="filter__item" value="">shop brtments</option>
+					<option class="filter__item" value="">shop by departments</option>
+					<option class="filter__item" value="">shop by departments</option>
+				</select>
+				<nav class="header-nav">
+					<ul class="header-nav__list">
+						<li class="header-nav__item header-nav__item_active">
+							<a class="header-nav__link" href="#">Home</a>
+						</li>
+						<li class="header-nav__item">
+							<a class="header-nav__link" href="#">Shop</a>
+						</li>
+						<li class="header-nav__item">
+							<a class="header-nav__link" href="#">Page</a>
+						</li>
+						<li class="header-nav__item">
+							<a class="header-nav__link" href="#">Services</a>
+						</li>
+						<li class="header-nav__item">
+							<a class="header-nav__link" href="#">Blog</a>
+						</li>
+						<li class="header-nav__item">
+							<a class="header-nav__link" href="#">Contact</a>
+						</li>
+						<li class="header-nav__item">
+							<a class="header-nav__link" href="#">Offers</a>
+						</li>
+					</ul>
+				</nav>
+				<section class="coupon">
+					<a class="coupon__link" href="#"
+						><img src="./images/svg/present.svg" alt="present" />
+						<p class="coupon__text">get your coupon code</p></a
+					>
+				</section>
+			</div>
+		</header>
+		<main class="main">
+			<div id="root"></div>
+			<section class="offers">
+				<div class="offers__container">
+					<article class="offer offer-1">
+						<p class="offer__sale">20% off</p>
+						<hr class="offer__line" />
+						<p class="offer__sale-sub-title">sale</p>
+						<h4 class="offer__title">Fruits & Vegetables</h4>
+						<a class="offer__link" href="#">shop the category</a
+						><img
+							class="offer__img"
+							src="./images/webp/vegetables-fruits.webp"
+							alt="vegetables-fruits"
+							style="width: 17.5rem; height: 15.375rem"
+						/>
+					</article>
+					<article class="offer offer-2">
+						<p class="offer__sale">15% off</p>
+						<hr class="offer__line" />
+						<p class="offer__sale-sub-title">sale</p>
+						<h4 class="offer__title">Baked Products</h4>
+						<a class="offer__link" href="#">shop the category</a
+						><img
+							class="offer__img"
+							src="./images/webp/bakery.webp"
+							alt="bakery"
+							style="width: 19.687rem; height: 17.625rem"
+						/>
+					</article>
+				</div>
+			</section>
+			<section class="banners">
+				<article class="banner banner-1">
+					<h4 class="banner__subtitle">Upto 15% Off</h4>
+					<h3 class="banner__title">Luxa Dark Chocolate</h3>
+					<p class="banner__text">
+						Chocolate is only the happiness that you can eat.
+					</p>
+					<button class="banner__btn" href="#">shop it</button>
+					<img
+						class="banner__img banner-1__img"
+						src="images/webp/dark-chocolate.webp"
+						alt="dark-cholocate"
+					/>
+				</article>
+				<article class="banner banner-2">
+					<h4 class="banner__subtitle">Upto 25% Off</h4>
+					<h3 class="banner__title">Creamy Muffins</h3>
+					<p class="banner__text">
+						Very tasty &amp; creamy vanilla flavour creamy muffins.
+					</p>
+					<button class="banner__btn" href="#">shop it</button>
+					<img
+						class="banner__img banner-2__img"
+						src="images/webp/creamy-muffins.webp"
+						alt="creamy-muffins"
+					/>
+				</article>
+			</section>
+			<section class="discount">
+				<article class="discount-info">
+					<h2 class="discount-info__title">
+						Get <span class="discount-info__title-span">20% discount</span> on
+						your first purchase
+					</h2>
+					<p class="discount-info__text">
+						Just Sign Up &amp; Register it now to become member of Templates
+						Jungle.
+					</p>
+				</article>
+				<form class="discount-form" action="#">
+					<label class="discount-form__label" for="discountFormInputMail"
+						>Email address
+						<span class="discount-form__input-container mail"
+							><input
+								class="discount-form__input"
+								id="discountFormInputMail"
+								placeholder="Enter email..." /></span></label
+					><label class="discount-form__label" for="discountFormInputPassword"
+						>Password
+						<span class="discount-form__input-container password"
+							><input
+								class="discount-form__input"
+								id="discountFormInputPassword"
+								placeholder="Create a password..." /></span></label
+					><label
+						class="discount-form__label"
+						for="discountFormInputPasswordRepeat"
+						>Repeat password
+						<span class="discount-form__input-container password"
+							><input
+								class="discount-form__input"
+								id="discountFormInputPasswordRepeat"
+								placeholder="Repeat a password..." /></span
+					></label>
+					<button class="discount-form__btn">Register it now</button>
+				</form>
+			</section>
+			<section class="articles">
+				<article class="article article_active">
+					<img
+						class="article__img"
+						src="./images/webp/fruits.webp"
+						alt="fruits"
+					/>
+					<footer class="article__footer">
+						<p class="article__date">
+							<time class="article__time" datetime="2021-01-12"
+								>12 jan, 2021</time
+							>
+							15 min
+						</p>
+					</footer>
+					<a class="article__link" href="#">
+						<h4 class="article__title">
+							Right way to preserve the fruits &amp; other organics
+						</h4></a
+					>
+
+					<p class="article__text">
+						Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend
+						viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor
+						morbi...
+					</p>
+				</article>
+				<article class="article">
+					<img
+						class="article__img"
+						src="./images/webp/broccoli.webp"
+						alt="broccoli"
+					/>
+					<footer class="article__footer">
+						<p class="article__date">
+							<time class="article__time" datetime="2021-01-12"
+								>12 jan, 2021</time
+							>
+							15 min
+						</p>
+					</footer>
+					<a class="article__link" href="#">
+						<h4 class="article__title">
+							How to maintain the freshness of vegetables
+						</h4></a
+					>
+
+					<p class="article__text">
+						Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend
+						viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor
+						morbi...
+					</p>
+				</article>
+				<article class="article">
+					<img
+						class="article__img"
+						src="./images/webp/butter.webp"
+						alt="butter"
+					/>
+					<footer class="article__footer">
+						<p class="article__date">
+							<time class="article__time" datetime="2021-01-12"
+								>12 jan, 2021</time
+							>
+							15 min
+						</p>
+					</footer>
+					<a class="article__link" href="#">
+						<h4 class="article__title">
+							Right way to preserve the fruits &amp; other organics
+						</h4></a
+					>
+
+					<p class="article__text">
+						Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend
+						viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor
+						morbi...
+					</p>
+				</article>
+			</section>
+			<section class="application">
+				<img
+					class="application__app-img"
+					src="./images/webp/phone.webp"
+					alt="phone"
+				/>
+				<div class="application__container">
+					<article class="application__info">
+						<h3 class="application__title">Shop faster with foodmart App</h3>
+						<p class="application__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
+							sed ptibus liberolectus nonet psryroin. Amet sed lorem posuere sit
+							iaculis amet, ac urna. Adipiscing fames semper erat ac in
+							suspendisse iaculis. Amet blandit tortor praesent ante vitae. A,
+							enim pretiummi senectus magna. Sagittis sed ptibus liberolectus
+							non et psryroin.
+						</p>
+						<div class="application__link-container">
+							<a
+								class="application__link"
+								href="https://play.google.com/store/games?hl=ru&amp;gl=US"
+								target="_blank"
+							>
+								<img
+									class="application__img"
+									src="./images/svg/google-play.svg"
+									alt="google-store"
+									style="width: 13rem; height: 3.813rem"
+								/>
+							</a>
+							<a
+								class="application__link"
+								href="https://www.apple.com/ru/app-store/"
+								target="_blank"
+							>
+								<img
+									class="application__img"
+									src="./images/svg/app-store.svg"
+									alt="app-store"
+									style="width: 11.5rem; height: 3.813rem"
+								/>
+							</a>
+						</div>
+					</article>
+				</div>
+			</section>
+			<section class="looking">
+				<ul class="looking__list">
+					<li class="looking__list-item">
+						<a class="looking__list-link" href="#">Blue diamon almonds</a>
+					</li>
+					<li class="looking__list-item">
+						<a class="looking__list-link" href="#"
+							>Angie’s Boomchickapop Corn</a
+						>
+					</li>
+					<li class="looking__list-item">
+						<a class="looking__list-link" href="#">Salty kettle Corn</a>
+					</li>
+					<li class="looking__list-item">
+						<a class="looking__list-link" href="#">Chobani Greek Yogurt</a>
+					</li>
+					<li class="looking__list-item">
+						<a class="looking__list-link" href="#">Sweet Vanilla Yogurt</a>
+					</li>
+					<li class="looking__list-item">
+						<a class="looking__list-link" href="#"
+							>Foster Farms Takeout Crispy wings</a
+						>
+					</li>
+					<li class="looking__list-item">
+						<a class="looking__list-link" href="#">Warrior Blend Organic</a>
+					</li>
+					<li class="looking__list-item">
+						<a class="looking__list-link" href="#"
+							>Encore Seafoods Stuffed Alaskan Salmon</a
+						>
+					</li>
+					<li class="looking__list-item">
+						<a class="looking__list-link" href="#">Chao Cheese Creamy</a>
+					</li>
+					<li class="looking__list-item">
+						<a class="looking__list-link" href="#">Chicken meatballs</a>
+					</li>
+					<li class="looking__list-item">
+						<a class="looking__list-link" href="#"
+							>Werther’s caramel hard candies</a
+						>
+					</li>
+					<li class="looking__list-item">
+						<a class="looking__list-link" href="#">Mate coffee creamer</a>
+					</li>
+					<li class="looking__list-item">
+						<a class="looking__list-link" href="#"
+							>Pasture raised chicken eggs</a
+						>
+					</li>
+					<li class="looking__list-item">
+						<a class="looking__list-link" href="#">Tree top fruit water</a>
+					</li>
+					<li class="looking__list-item">
+						<a class="looking__list-link" href="#"
+							>Natural Vanilla Light Roast Coffee</a
+						>
+					</li>
+					<li class="looking__list-item">
+						<a class="looking__list-link" href="#"
+							>Sweet Vanilla essence Yogurt</a
+						>
+					</li>
+				</ul>
+			</section>
+			<section class="services">
+				<article class="service">
+					<div class="service-title__container">
+						<img
+							class="service__img"
+							src="./images/svg/cart-2.svg"
+							alt="cart"
+							style="width: 1.918rem; height: 2.062rem"
+						/>
+						<h4 class="service__title">Free delivery</h4>
+					</div>
+					<p class="service__text">
+						Lorem ipsum dolor sit amet, consectetur adipi elit.
+					</p>
+				</article>
+				<article class="service">
+					<div class="service-title__container">
+						<img
+							class="service__img"
+							src="./images/svg/security.svg"
+							alt="security"
+							style="width: 1.752rem; height: 1.875rem"
+						/>
+						<h4 class="service__title">100% secure payment</h4>
+					</div>
+					<p class="service__text">
+						Lorem ipsum dolor sit amet, consectetur adipi elit.
+					</p>
+				</article>
+				<article class="service">
+					<div class="service-title__container">
+						<img
+							class="service__img"
+							src="./images/svg/medal.svg"
+							alt="medal"
+							style="width: 2.014rem; height: 1.608rem"
+						/>
+						<h4 class="service__title">Quality guarantee</h4>
+					</div>
+					<p class="service__text">
+						Lorem ipsum dolor sit amet, consectetur adipi elit.
+					</p>
+				</article>
+				<article class="service">
+					<div class="service-title__container">
+						<img
+							class="service__img"
+							src="./images/svg/coin.svg"
+							alt="coin"
+							style="width: 2.048rem; height: 2.014rem"
+						/>
+						<h4 class="service__title">guaranteed savings</h4>
+					</div>
+					<p class="service__text">
+						Lorem ipsum dolor sit amet, consectetur adipi elit.
+					</p>
+				</article>
+				<article class="service">
+					<div class="service-title__container">
+						<img
+							class="service__img"
+							src="./images/svg/ticket.svg"
+							alt="ticket"
+							style="width: 1.592rem; height: 2.171rem"
+						/>
+						<h4 class="service__title">Daily offers</h4>
+					</div>
+					<p class="service__text">
+						Lorem ipsum dolor sit amet, consectetur adipi elit.
+					</p>
+				</article>
+			</section>
+		</main>
+		<footer class="footer">
+			<hr class="line" />
+			<div class="footer__content">
+				<section class="social">
+					<a href="#" class="social__logo-link"
+						><img
+							class="social__logo-img"
+							src="./images/svg/logo.svg"
+							alt="logo"
+					/></a>
+					<nav class="social__links">
+						<ul class="social__list">
+							<li class="social__item">
+								<a
+									class="social__link"
+									href="https://www.facebook.com/"
+									target="_blank"
+								>
+									<img
+										class="social__img"
+										src="./images/svg/facebook.svg"
+										alt="facebook"
+								/></a>
+							</li>
+							<li class="social__item">
+								<a
+									class="social__link"
+									href="https://twitter.com/?lang=ru"
+									target="_blank"
+								>
+									<img
+										class="social__img"
+										src="./images/svg/twitter.svg"
+										alt="twitter"
+								/></a>
+							</li>
+							<li class="social__item">
+								<a
+									class="social__link"
+									href="https://www.pinterest.ca/"
+									target="_blank"
+								>
+									<img
+										class="social__img"
+										src="./images/svg/pinterset.svg"
+										alt="pinterset"
+								/></a>
+							</li>
+							<li class="social__item">
+								<a
+									class="social__link"
+									href="https://www.instagram.com/"
+									target="_blank"
+								>
+									<img
+										class="social__img"
+										src="./images/svg/instagram.svg"
+										alt="instagram"
+								/></a>
+							</li>
+							<li class="social__item">
+								<a
+									class="social__link"
+									href="https://www.youtube.com/"
+									target="_blank"
+								>
+									<img
+										class="social__img"
+										src="./images/svg/youtube.svg"
+										alt="youtube"
+								/></a>
+							</li>
+						</ul>
+					</nav>
+				</section>
+				<nav class="navigation">
+					<ul class="navigation__list">
+						<li class="navigation__item">
+							<h4 class="navigation__title">quick links</h4>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#">home</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#">about us</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#">offers</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#">services</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#">contact us</a>
+						</li>
+					</ul>
+					<ul class="navigation__list">
+						<li class="navigation__item">
+							<h4 class="navigation__title">About</h4>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#" target="_blank"
+								>How it work
+							</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#" target="_blank"
+								>our packages</a
+							>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#" target="_blank"
+								>promotions</a
+							>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#" target="_blank"
+								>refer a friend</a
+							>
+						</li>
+					</ul>
+					<ul class="navigation__list">
+						<li class="navigation__item">
+							<h4 class="navigation__title">Help Centre</h4>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#" target="_blank">Payments </a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#" target="_blank">shipping</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#" target="_blank"
+								>Product returns</a
+							>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#" target="_blank">FAQs</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#" target="_blank">Checkout</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#" target="_blank">
+								other Issues</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<section class="news">
+					<h4 class="news__title">Our newsletter</h4>
+					<p class="news__text">
+						Subscribe to our newsletter to get updates about our grand offers.
+					</p>
+					<div class="news__subscribe">
+						<input
+							class="news__input"
+							type="email"
+							placeholder="Enter your email-address"
+						/>
+						<button class="news__btn">Send</button>
+					</div>
+				</section>
+			</div>
+			<section class="copyright">
+				<p class="copyright__rights">
+					&copy; 2022 TemplatesJungle. All rights reserved.
+				</p>
+				<p class="copyright__author">
+					Design by <span class="copyright__author-span">TemplatesJungle</span>
+				</p>
+			</section>
+		</footer>
+	</body>
+</html>

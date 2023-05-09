@@ -1,0 +1,84 @@
+@import "../../scss/_variables";
+@import "../../scss/mixin&extend";
+
+.slider {
+	width: 61.563rem;
+	height: 39.25rem;
+	position: relative;
+	// display: flex;
+	// flex-wrap: wrap;
+	// flex-direction: column;
+	// overflow: hidden;
+
+	.slide {
+		width: 61.563rem;
+		height: 39.25rem;
+		// position: relative;
+		position: absolute;
+
+		padding: 7.8rem 2rem 2.875rem 7.5rem;
+		border-radius: 12px;
+		background-color: $blue;
+		opacity: 0;
+		transition: opacity ease-in-out 0.4s;
+
+		.slide__subtitle {
+			font-size: 1.688rem;
+			letter-spacing: 0.54px;
+			font-family: $cormodantGaramond-regular;
+			text-transform: capitalize;
+			color: $dusty-orange;
+
+			.slide__subtitle-span {
+				text-transform: uppercase;
+				font-feature-settings: "lnum";
+			}
+		}
+		.slide__title {
+			width: 29rem;
+			margin: 2.2rem 0 0 0;
+
+			font-size: 3.375rem;
+			font-family: $nunito-bold;
+			line-height: 1.27;
+			letter-spacing: 1.08px;
+			color: $black;
+			text-transform: capitalize;
+		}
+		.slide__text {
+			margin: 1.4rem 0 0 0;
+
+			font-size: 1.125rem;
+			font-family: $openSans-regular;
+			letter-spacing: 0.54px;
+			color: $dark-grey;
+			text-transform: capitalize;
+		}
+
+		.slide__link {
+			width: 10.938rem;
+			height: 3.5rem;
+			margin: 3.75rem 0 0 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 4px;
+			border: solid 1px $black;
+
+			font-size: 1rem;
+			font-family: $openSans-regular;
+			letter-spacing: 0.64px;
+			text-transform: uppercase;
+			white-space: nowrap;
+		}
+		.slide__img {
+			width: 23.25rem;
+			height: 35.375rem;
+			margin: auto 2rem auto auto;
+			@extend %absolute;
+		}
+	}
+	.slide_active {
+		opacity: 1;
+	}
+}
