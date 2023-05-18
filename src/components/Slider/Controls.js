@@ -2,11 +2,7 @@ import React from "react";
 import "./Controls.scss";
 import dataSlider from "./dataSlider";
 
-export default function Controls({slideIndex, setSlideIndex}) {
-	const setSlide = (index) => {
-		setSlideIndex(index);
-	};
-
+export default function Controls({slideIndex, setSlide}) {
 	return (
 		<section className="slider__buttons">
 			{dataSlider.map((obj, index) => {

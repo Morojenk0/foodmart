@@ -286,74 +286,82 @@
 
 	.offers__container {
 		width: 100.75rem;
+		display: flex;
+		align-items: center;
 
-		.offer {
-			width: 37.313rem;
-			height: 18.688rem;
-			position: relative;
-
-			padding: 3.4rem 0 0 3.4rem;
-			border-radius: 12px;
-
-			.offer__sale {
-				font-family: $cormodantGaramond-regular;
-				font-size: 2.313rem;
-				color: $light-black;
-				font-feature-settings: "lnum";
-				text-transform: capitalize;
-			}
-			.offer__line {
-				display: inline-block;
-				width: 3rem;
-				height: 0.063rem;
-				background-color: $light-black;
-				margin: -0.3rem 0 0 0;
-			}
-			.offer__sale-sub-title {
-				display: inline-block;
-
-				font-family: $openSans-regular;
-				font-size: 0.688rem;
-				letter-spacing: 3.3px;
-				color: $light-black;
-				text-transform: uppercase;
-			}
-			.offer__title {
-				margin: 1.6rem 0 0 0;
+		.offer__wrapper {
+			margin: 0 0 0 1.875rem;
+			.offer {
+				width: 37.313rem;
+				height: 18.688rem;
 				position: relative;
-				z-index: 2;
 
-				font-family: $nunito-bold;
-				font-size: 2.063rem;
-				letter-spacing: 0.66px;
-				color: $black;
-				text-transform: capitalize;
-			}
-			.offer__link {
-				margin: 1.6rem 0 0 0;
-				display: inline-block;
+				padding: 3.4rem 0 0 3.4rem;
+				border-radius: 12px;
 
-				font-family: $openSans-regular;
-				font-size: 1rem;
-				text-align: left;
-				color: $black;
-				text-transform: capitalize;
+				.offer__sale {
+					font-family: $cormodantGaramond-regular;
+					font-size: 2.313rem;
+					color: $light-black;
+					font-feature-settings: "lnum";
+					text-transform: capitalize;
+				}
+				.offer__line {
+					display: inline-block;
+					width: 3rem;
+					height: 0.063rem;
+					background-color: $light-black;
+					margin: -0.3rem 0 0 0;
+				}
+				.offer__sale-sub-title {
+					display: inline-block;
+
+					font-family: $openSans-regular;
+					font-size: 0.688rem;
+					letter-spacing: 3.3px;
+					color: $light-black;
+					text-transform: uppercase;
+				}
+				.offer__title {
+					margin: 1.6rem 0 0 0;
+					position: relative;
+					z-index: 2;
+
+					font-family: $nunito-bold;
+					font-size: 2.063rem;
+					letter-spacing: 0.66px;
+					color: $black;
+					text-transform: capitalize;
+				}
+				.offer__link {
+					margin: 1.6rem 0 0 0;
+					display: inline-block;
+
+					font-family: $openSans-regular;
+					font-size: 1rem;
+					text-align: left;
+					color: $black;
+					text-transform: capitalize;
+				}
+				.offer__link::after {
+					content: url("../images/svg/arrow-right.svg");
+					margin: 0 0 0 0.5rem;
+				}
+				.offer__img {
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					border-radius: 12px;
+				}
 			}
-			.offer__link::after {
-				content: url("../images/svg/arrow-right.svg");
-				margin: 0 0 0 0.5rem;
+			.offer-1 {
+				margin: 0 0 1.875rem 0;
+
+				background-color: $light-green;
 			}
-			.offer__img {
-				position: absolute;
-				right: 0;
-				bottom: 0;
+			.offer-2 {
+				background-color: $dark-light;
 			}
-		}
-		.offer-1 {
-			background-color: $light-green;
-		}
-		.offer-2 {
-			background-color: $dark-light;
 		}
 	}
 }

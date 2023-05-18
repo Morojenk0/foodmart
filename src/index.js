@@ -2,11 +2,16 @@ import React from "react";
 import {createRoot} from "react-dom/client";
 import "./scss/index.scss";
 import App from "./App";
+import Slider from "./components/Slider/Slider";
 
-const RootElement = document.getElementById("root");
-const root = createRoot(RootElement);
-root.render(
-	<React.StrictMode>
-		<App />
-	</React.StrictMode>
-);
+// const rootElement = document.getElementById("root");
+// const root = createRoot(rootElement);
+// root.render(
+// 	<React.StrictMode>
+// 		<App />
+// 	</React.StrictMode>
+// );
+
+const sliderDomNode = document.getElementById("slider");
+const sliderRoot = createRoot(sliderDomNode);
+sliderRoot.render(<Slider />);
