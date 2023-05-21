@@ -3,6 +3,7 @@ import {createRoot} from "react-dom/client";
 import "./scss/index.scss";
 import App from "./App";
 import Slider from "./components/Slider/Slider";
+import CategorySlider from "./components/categorySlider/CategorySlider";
 
 // const rootElement = document.getElementById("root");
 // const root = createRoot(rootElement);
@@ -15,3 +16,7 @@ import Slider from "./components/Slider/Slider";
 const sliderDomNode = document.getElementById("slider");
 const sliderRoot = createRoot(sliderDomNode);
 sliderRoot.render(<Slider />);
+
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+root.render(<CategorySlider />);
