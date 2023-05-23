@@ -25,6 +25,30 @@ const dataCategorySlider = [
 		id: uuidv4(),
 		title: "Natural Herbs",
 	},
+	{
+		id: uuidv4(),
+		title: "Natural Herbs",
+	},
+	{
+		id: uuidv4(),
+		title: "Natural Herbs",
+	},
+	{
+		id: uuidv4(),
+		title: "Natural Herbs",
+	},
+	{
+		id: uuidv4(),
+		title: "Natural Herbs",
+	},
+	{
+		id: uuidv4(),
+		title: "Natural Herbs",
+	},
+	{
+		id: uuidv4(),
+		title: "Natural Herbs",
+	},
 ];
 
 export default dataCategorySlider;

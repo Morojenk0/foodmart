@@ -1,0 +1,14 @@
+@import "../../scss/_variables";
+@import "../../scss/mixin&extend";
+
+.slider__btn-prev {
+}
+.btn-slide {
+	width: 2.375rem;
+	height: 2.375rem;
+	border-radius: 10px;
+	background-color: $dark-white;
+}
+.btn-slide:hover {
+	background-color: $orange;
+}
