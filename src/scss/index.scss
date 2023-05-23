@@ -217,6 +217,10 @@
 		font-family: $openSans-regular;
 		@extend %drop-down-arrow;
 	}
+	.filter:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
 	.header-nav {
 		margin: 0 0 0 9.2rem;
 
@@ -286,161 +290,180 @@
 
 	.offers__container {
 		width: 100.75rem;
+		display: flex;
+		align-items: center;
 
-		.offer {
-			width: 37.313rem;
-			height: 18.688rem;
-			position: relative;
-
-			padding: 3.4rem 0 0 3.4rem;
-			border-radius: 12px;
-
-			.offer__sale {
-				font-family: $cormodantGaramond-regular;
-				font-size: 2.313rem;
-				color: $light-black;
-				font-feature-settings: "lnum";
-				text-transform: capitalize;
-			}
-			.offer__line {
-				display: inline-block;
-				width: 3rem;
-				height: 0.063rem;
-				background-color: $light-black;
-				margin: -0.3rem 0 0 0;
-			}
-			.offer__sale-sub-title {
-				display: inline-block;
-
-				font-family: $openSans-regular;
-				font-size: 0.688rem;
-				letter-spacing: 3.3px;
-				color: $light-black;
-				text-transform: uppercase;
-			}
-			.offer__title {
-				margin: 1.6rem 0 0 0;
+		.offer__wrapper {
+			margin: 0 0 0 1.875rem;
+			.offer {
+				width: 37.313rem;
+				height: 18.688rem;
 				position: relative;
-				z-index: 2;
 
-				font-family: $nunito-bold;
-				font-size: 2.063rem;
-				letter-spacing: 0.66px;
-				color: $black;
-				text-transform: capitalize;
-			}
-			.offer__link {
-				margin: 1.6rem 0 0 0;
-				display: inline-block;
+				padding: 3.4rem 0 0 3.4rem;
+				border-radius: 12px;
 
-				font-family: $openSans-regular;
-				font-size: 1rem;
-				text-align: left;
-				color: $black;
-				text-transform: capitalize;
+				.offer__sale {
+					font-family: $cormodantGaramond-regular;
+					font-size: 2.313rem;
+					color: $light-black;
+					font-feature-settings: "lnum";
+					text-transform: capitalize;
+				}
+				.offer__line {
+					display: inline-block;
+					width: 3rem;
+					height: 0.063rem;
+					background-color: $light-black;
+					margin: -0.3rem 0 0 0;
+				}
+				.offer__sale-sub-title {
+					display: inline-block;
+
+					font-family: $openSans-regular;
+					font-size: 0.688rem;
+					letter-spacing: 3.3px;
+					color: $light-black;
+					text-transform: uppercase;
+				}
+				.offer__title {
+					margin: 1.6rem 0 0 0;
+					position: relative;
+					z-index: 2;
+
+					font-family: $nunito-bold;
+					font-size: 2.063rem;
+					letter-spacing: 0.66px;
+					color: $black;
+					text-transform: capitalize;
+				}
+				.offer__link {
+					margin: 1.6rem 0 0 0;
+					display: inline-block;
+
+					font-family: $openSans-regular;
+					font-size: 1rem;
+					text-align: left;
+					color: $black;
+					text-transform: capitalize;
+				}
+				.offer__link::after {
+					content: url("../images/svg/arrow-right-black.svg");
+					margin: 0 0 0 0.5rem;
+				}
+				.offer__img {
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					border-radius: 12px;
+				}
 			}
-			.offer__link::after {
-				content: url("../images/svg/arrow-right.svg");
-				margin: 0 0 0 0.5rem;
+			.offer-1 {
+				margin: 0 0 1.875rem 0;
+
+				background-color: $light-green;
 			}
-			.offer__img {
-				position: absolute;
-				right: 0;
-				bottom: 0;
+			.offer-2 {
+				background-color: $dark-light;
 			}
-		}
-		.offer-1 {
-			background-color: $light-green;
-		}
-		.offer-2 {
-			background-color: $dark-light;
 		}
 	}
 }
 
 .banners {
-	width: 100.75rem;
-	margin: 11.2rem 0 0 0;
+	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	background-image: url("../images/bg/foliage-3.svg"),
+		url("../images/bg/foliage-4.svg");
+	background-position: left top, right bottom;
+	background-repeat: no-repeat, no-repeat;
 
-	.banner {
-		width: 49rem;
-		height: 24.375rem;
+	.banners__container {
+		width: 100.75rem;
+		margin: 11.8rem 0 11.8rem 0;
+		display: flex;
+		justify-content: space-between;
 		position: relative;
 
-		border-radius: 12px;
-		padding: 5rem 0 0 5rem;
+		.banner {
+			width: 49rem;
+			height: 24.375rem;
+			position: relative;
 
-		.banner__subtitle {
-			font-family: $cormodantGaramond-regular;
-			font-size: 1.25rem;
-			letter-spacing: 0.5px;
-			color: $blush-pink;
-			text-transform: capitalize;
-			font-feature-settings: "lnum";
+			border-radius: 12px;
+			padding: 5rem 0 0 5rem;
+
+			.banner__subtitle {
+				font-family: $cormodantGaramond-regular;
+				font-size: 1.25rem;
+				letter-spacing: 0.5px;
+				color: $blush-pink;
+				text-transform: capitalize;
+				font-feature-settings: "lnum";
+			}
+			.banner__title {
+				margin: 1.6rem 0 0 0;
+
+				font-size: 2.125rem;
+				font-family: $nunito-bold;
+				letter-spacing: 0.68px;
+				color: $black;
+				text-transform: capitalize;
+			}
+			.banner__text {
+				width: 20.75rem;
+				margin: 0.3rem 0 0 0;
+
+				font-family: $openSans-regular;
+				font-size: 1rem;
+				line-height: 1.9;
+				letter-spacing: 0.48px;
+				color: $dark-grey;
+			}
+			.banner__btn {
+				width: 7.188rem;
+				height: 2.625rem;
+				display: block;
+				margin: 1.9rem 0 0 0;
+
+				background-color: $black;
+
+				font-family: $openSans-regular;
+				font-size: 1rem;
+				letter-spacing: 0.64px;
+				text-transform: uppercase;
+				border-radius: 4px;
+				color: $white;
+			}
+			.banner__img {
+				@extend %absolute;
+			}
 		}
-		.banner__title {
-			margin: 1.6rem 0 0 0;
+		.banner-1 {
+			background-color: #ffeada;
+			background-image: url("../images/svg/products-bg.svg");
 
-			font-size: 2.125rem;
-			font-family: $nunito-bold;
-			letter-spacing: 0.68px;
-			color: $black;
-			text-transform: capitalize;
+			.banner-1__img {
+				width: 18.688rem;
+				height: 14.75rem;
+				margin: auto 4.3rem auto auto;
+			}
 		}
-		.banner__text {
-			width: 20.75rem;
-			margin: 0.3rem 0 0 0;
+		.banner-2 {
+			position: relative;
 
-			font-family: $openSans-regular;
-			font-size: 1rem;
-			line-height: 1.9;
-			letter-spacing: 0.48px;
-			color: $dark-grey;
-		}
-		.banner__btn {
-			width: 7.188rem;
-			height: 2.625rem;
-			display: block;
-			margin: 1.9rem 0 0 0;
+			background-color: $light-blue;
+			background-image: url("../images/bg/vector-1.svg"),
+				url("../images/bg/vector-2.svg");
+			background-position: left bottom, right top;
+			background-repeat: no-repeat, no-repeat;
 
-			background-color: $black;
-
-			font-family: $openSans-regular;
-			font-size: 1rem;
-			letter-spacing: 0.64px;
-			text-transform: uppercase;
-			border-radius: 4px;
-			color: $white;
-		}
-		.banner__img {
-			@extend %absolute;
-		}
-	}
-	.banner-1 {
-		background-color: #ffeada;
-		background-image: url("../images/svg/products-bg.svg");
-
-		.banner-1__img {
-			width: 18.688rem;
-			height: 14.75rem;
-			margin: auto 4.3rem auto auto;
-		}
-	}
-	.banner-2 {
-		position: relative;
-
-		background-color: $light-blue;
-		background-image: url("../images/bg/vector-1.svg"),
-			url("../images/bg/vector-2.svg");
-		background-position: left bottom, right top;
-		background-repeat: no-repeat, no-repeat;
-
-		.banner-2__img {
-			width: 23.175rem;
-			height: 16.844rem;
-			margin: auto 2rem auto auto;
+			.banner-2__img {
+				width: 23.175rem;
+				height: 16.844rem;
+				margin: auto 2rem auto auto;
+			}
 		}
 	}
 }
@@ -448,7 +471,6 @@
 .discount {
 	width: 100.75rem;
 	height: 42.375rem;
-	margin: 11.6rem 0 0 0;
 	position: relative;
 	display: flex;
 	justify-content: space-between;
@@ -584,8 +606,33 @@
 				letter-spacing: 0.52px;
 				color: $light-grey;
 				text-transform: capitalize;
-				// .article__time {
-				// }
+
+				.article__time::before {
+					content: "";
+					width: 0.625rem;
+					height: 0.688rem;
+					margin: auto 0.313rem auto 0;
+					display: inline-flex;
+					background-image: url("../images/svg/date.svg");
+					background-size: contain;
+				}
+				.article__post-time {
+					display: inline-flex;
+					align-items: center;
+					border-left: solid 0.063rem $light-grey;
+					height: 0.688rem;
+					margin: 0 0 0 0.2rem;
+					padding: 0 0 0 0.5rem;
+				}
+				.article__post-time::before {
+					content: "";
+					width: 0.625rem;
+					height: 0.688rem;
+					margin: auto 0.313rem auto 0;
+					display: inline-flex;
+					background-image: url("../images/svg/time.svg");
+					background-size: contain;
+				}
 			}
 		}
 		.article__title {

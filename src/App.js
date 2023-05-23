@@ -1,12 +1,14 @@
-import React from "react";
-import Slider from "./components/Slider/Slider.js";
+// import React from "react";
+// import Slider from "./components/Slider/Slider";
 
-const App = () => {
-	return (
-		<>
-			<Slider />
-		</>
-	);
-};
+// const slider = document.getElementById("slider");
 
-export default App;
+// const App = () => {
+// 	return (
+// 		<>
+// 			<Slider />
+// 		</>
+// 	);
+// };
+
+// export default App;

@@ -5,6 +5,8 @@
 	width: 61.563rem;
 	height: 39.25rem;
 	position: relative;
+	background-color: $blue;
+	border-radius: 12px;
 	// display: flex;
 	// flex-wrap: wrap;
 	// flex-direction: column;
@@ -15,12 +17,13 @@
 		height: 39.25rem;
 		// position: relative;
 		position: absolute;
+		visibility: hidden;
 
 		padding: 7.8rem 2rem 2.875rem 7.5rem;
 		border-radius: 12px;
 		background-color: $blue;
 		opacity: 0;
-		transition: opacity ease-in-out 0.4s;
+		transition: opacity ease-in-out 1.5s;
 
 		.slide__subtitle {
 			font-size: 1.688rem;
@@ -80,5 +83,6 @@
 	}
 	.slide_active {
 		opacity: 1;
+		visibility: visible;
 	}
 }

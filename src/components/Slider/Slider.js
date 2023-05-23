@@ -7,8 +7,12 @@ import Controls from "./Controls";
 export default function Slider() {
 	const [slideIndex, setSlideIndex] = useState(1);
 
+	const setSlide = (index) => {
+		setSlideIndex(index);
+	};
+
 	return (
-		<section className="slider">
+		<>
 			{dataSlider.map((obj, index) => {
 				return (
 					<article
@@ -17,7 +21,10 @@ export default function Slider() {
 						}
 						key={obj.id}
 					>
-						<p className="slide__subtitle">{obj.subTitle}</p>
+						<p className="slide__subtitle">
+							<span className="slide__subtitle-span">{obj.subTitle[0]} </span>
+							{obj.subTitle[1]}
+						</p>
 						<h3 className="slide__title">{obj.title}</h3>
 						<p className="slide__text">{obj.text}</p>
 						<a className="slide__link" href="#">
@@ -30,7 +37,7 @@ export default function Slider() {
 					</article>
 				);
 			})}
-			<Controls slideIndex={slideIndex} setSlideIndex={setSlideIndex} />
-		</section>
+			<Controls slideIndex={slideIndex} setSlide={setSlide} />
+		</>
 	);
 }
