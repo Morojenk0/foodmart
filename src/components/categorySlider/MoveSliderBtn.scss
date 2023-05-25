@@ -9,6 +9,9 @@
 	border-radius: 10px;
 	background-color: $dark-white;
 }
+.btn-slide:last-child {
+	margin: 0 0 0 0.8rem;
+}
 .btn-slide:hover {
 	background-color: $orange;
 }

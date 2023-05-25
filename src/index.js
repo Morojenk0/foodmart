@@ -15,8 +15,16 @@ import CategorySlider from "./components/categorySlider/CategorySlider";
 
 const sliderDomNode = document.getElementById("slider");
 const sliderRoot = createRoot(sliderDomNode);
-sliderRoot.render(<Slider />);
+sliderRoot.render(
+	<React.StrictMode>
+		<Slider />
+	</React.StrictMode>
+);
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
-root.render(<CategorySlider />);
+root.render(
+	<React.StrictMode>
+		<CategorySlider />
+	</React.StrictMode>
+);
