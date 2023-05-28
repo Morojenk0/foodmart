@@ -1,22 +1,22 @@
 import React from "react";
 import arrowLeft from "../../images/control-arrow-left.svg";
 import arrowRight from "../../images/control-arrow-right.svg";
-import "./MoveSliderBtn.scss";
+import "./MoveCarouselBtn.scss";
 
-export default function MoveSliderBtn({
-	direction,
-	nextSlide,
-	prevSlide,
-	slideIndex,
-}) {
+export default function MoveCarouselBtn({direction, nextSlide, prevSlide}) {
 	return (
 		<>
 			<button
 				onClick={direction === "next" ? nextSlide : prevSlide}
-				className={direction === "next" ? "btn-slide next" : "btn-slide prev"}
+				className={
+					direction === "next"
+						? "carousel__btn next"
+						: "carousel__btn prev disabled"
+				}
 			>
 				<img src={direction === "next" ? arrowRight : arrowLeft} />
 			</button>
 		</>
 	);
 }
+// className={direction === "next" ? "btn-slide next" : "btn-slide prev"}

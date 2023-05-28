@@ -1,6 +1,6 @@
 import {v4 as uuidv4} from "uuid";
 import React from "react";
-const dataCategorySlider = [
+const dataCategoryCarousel = [
 	{
 		id: uuidv4(),
 		title: "Fruits & Veges",
@@ -49,6 +49,30 @@ const dataCategorySlider = [
 		id: uuidv4(),
 		title: "Natural Herbs",
 	},
+	{
+		id: uuidv4(),
+		title: "Natural Herbs",
+	},
+	{
+		id: uuidv4(),
+		title: "Natural Herbs",
+	},
+	{
+		id: uuidv4(),
+		title: "Natural Herbs",
+	},
+	{
+		id: uuidv4(),
+		title: "Natural Herbs",
+	},
+	{
+		id: uuidv4(),
+		title: "Natural Herbs",
+	},
+	{
+		id: uuidv4(),
+		title: "Natural Herbs",
+	},
 ];
 
-export default dataCategorySlider;
+export default dataCategoryCarousel;
