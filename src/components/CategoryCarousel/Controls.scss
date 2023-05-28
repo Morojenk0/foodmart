@@ -1,26 +1,27 @@
 @import "../../scss/_variables";
 @import "../../scss/mixin&extend";
 
-.slider__controls {
+.carousel__controls {
+	width: 100.75rem;
 	display: flex;
 	justify-content: space-between;
-	width: 100.75rem;
 
-	.slider__title {
+	.carousel__title {
 		font-family: $nunito-bold;
 		font-size: 2.25rem;
 		color: $black;
 		text-transform: capitalize;
 	}
-	.slider__controls-container {
+	.carousel__controls-container {
 		display: flex;
+		align-self: center;
+
 		font-family: $openSans-regular;
 		font-size: 1rem;
 		color: $dark-grey;
 		text-transform: capitalize;
-		align-self: center;
 
-		.slider__btn-caterogies {
+		.carousel__btn-caterogies {
 			margin: 0 3rem 0 0;
 
 			font-family: $openSans-semi-bold;
@@ -28,7 +29,7 @@
 			color: $dark-grey;
 			text-transform: capitalize;
 		}
-		.slider__btn-caterogies::after {
+		.carousel__btn-caterogies::after {
 			content: url("../../images/svg/arrow-right-gray.svg");
 			margin: 0 0 0 0.5rem;
 		}

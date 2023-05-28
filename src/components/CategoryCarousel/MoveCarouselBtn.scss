@@ -1,17 +1,16 @@
 @import "../../scss/_variables";
 @import "../../scss/mixin&extend";
 
-.slider__btn-prev {
-}
-.btn-slide {
+.carousel__btn {
 	width: 2.375rem;
 	height: 2.375rem;
+
 	border-radius: 10px;
-	background-color: $dark-white;
+	background-color: $orange;
 }
-.btn-slide:last-child {
+.carousel__btn:last-child {
 	margin: 0 0 0 0.8rem;
 }
-.btn-slide:hover {
-	background-color: $orange;
+.disabled {
+	background-color: $dark-white;
 }

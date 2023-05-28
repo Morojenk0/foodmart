@@ -3,7 +3,7 @@ import {createRoot} from "react-dom/client";
 import "./scss/index.scss";
 import App from "./App";
 import Slider from "./components/Slider/Slider";
-import CategorySlider from "./components/categorySlider/CategorySlider";
+import CategoryCarousel from "./components/CategoryCarousel/CategoryCarousel";
 
 // const rootElement = document.getElementById("root");
 // const root = createRoot(rootElement);
@@ -21,10 +21,10 @@ sliderRoot.render(
 	</React.StrictMode>
 );
 
-const rootElement = document.getElementById("root");
+const rootElement = document.getElementById("category");
 const root = createRoot(rootElement);
 root.render(
 	<React.StrictMode>
-		<CategorySlider />
+		<CategoryCarousel />
 	</React.StrictMode>
 );
